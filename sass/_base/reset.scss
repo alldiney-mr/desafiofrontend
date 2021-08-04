@@ -11,5 +11,10 @@
     text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-  }
+    list-style: none;
+}
+
+img {
+  max-width: 700px;
+}
   
