@@ -1,31 +1,69 @@
 .header{
-    width: 100%;
     display: flex;
-    justify-content: center;
     flex-direction: column; 
-    background-color: $amarelo;
-    
-    &__desafio{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    &__nav{
-        background-color: white;
-
-        .nav__ul{
-            display: flex;
-            justify-content: center;
-        }
-    }
+    justify-content: center;
+    background-color: $color-blue-dark;
 
     &__logo{
-        top: 32px;
-        left: 836px;
+        margin: auto;
+        box-sizing: content-box;
+        padding-top: 32.35px;
+        padding-bottom: 14px;
         width: 247px;
         height: 51px;
         background: transparent url('img/valtech-logo-vector.png') 0% 0% no-repeat padding-box;
         opacity: 0.68;
     }
+
+    &__title{
+        display: flex;
+        box-sizing: content-box;
+        justify-content: center;
+        padding-bottom: 29px;
+        font-size: 28px;
+        letter-spacing: 3.36px;
+        text-shadow: $color-gray-dark 0 3px 6px;
+        font-weight: 200;
+        color: $color-white;
+        &-negrito{
+            font-weight: bold;
+            padding: 0;
+        }
+    }
+
+    &__nav{
+        background-color: $color-white;
+        border: $color-gray-dark;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        height: 56px;
+        
+        .nav__ul{
+            letter-spacing: 2.3px;
+            opacity: 1;
+            width: 647px;
+            height: 56px;
+
+            &__li{
+            padding: 7px 15px;
+            display: inline-block;
+            font-size: 23px;
+            letter-spacing: 2.3px;
+            color: $color-gray-regular;
+            margin: 0;
+
+                &-focus{
+                    color: $color-white;
+                    background: $color-blue-dark;
+                }
+                &:hover{
+                    color: $color-white;
+                    background: $color-blue-dark;
+                }
+            }  
+        }
+    }
+
+    
 }
