@@ -1,33 +1,39 @@
 .header{
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
     background-color: $color-blue-dark;
+    box-sizing: content-box;
 
-    &__logo{
-        margin: auto;
+    &__desafio{
         box-sizing: content-box;
-        padding-top: 32.35px;
-        padding-bottom: 14px;
-        width: 247px;
-        height: 51px;
-        background: transparent url('img/valtech-logo-vector.png') 0% 0% no-repeat padding-box;
-        opacity: 0.68;
-    }
-
-    &__title{
         display: flex;
-        box-sizing: content-box;
+        flex-direction: column; 
         justify-content: center;
-        padding-bottom: 29px;
-        font-size: 28px;
-        letter-spacing: 3.36px;
-        text-shadow: $color-gray-dark 0 3px 6px;
-        font-weight: 200;
-        color: $color-white;
-        &-negrito{
-            font-weight: bold;
-            padding: 0;
+        height: 176px;
+
+        &__logo{
+            box-sizing: content-box;
+            margin: auto;
+            padding-top: 32.35px;
+            padding-bottom: 14px;
+            width: 247px;
+            height: 51px;
+            background: transparent url('img/valtech-logo-vector.png') 0% 0% no-repeat padding-box;
+            opacity: 0.68;
+        }
+    
+        &__title{
+            box-sizing: content-box;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 29px;
+            font-size: 28px;
+            letter-spacing: 3.36px;
+            text-shadow: $color-gray-dark 0 3px 6px;
+            font-weight: 200;
+            color: $color-white;
+            &-negrito{
+                font-weight: bold;
+                padding: 0;
+            }
         }
     }
 
@@ -42,8 +48,7 @@
         .nav__ul{
             letter-spacing: 2.3px;
             opacity: 1;
-            width: 647px;
-            height: 56px;
+            height: 59px;
 
             &__li{
             padding: 7px 15px;
@@ -51,7 +56,6 @@
             font-size: 23px;
             letter-spacing: 2.3px;
             color: $color-gray-regular;
-            margin: 0;
 
                 &-focus{
                     color: $color-white;
