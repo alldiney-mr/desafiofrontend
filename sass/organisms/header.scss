@@ -1,13 +1,13 @@
 .header{
-    background-color: $color-blue-dark;
-    box-sizing: content-box;
+    background-color: $color-blue-light;
+    height: auto;
 
     &__desafio{
         box-sizing: content-box;
         display: flex;
         flex-direction: column; 
-        justify-content: center;
-        height: 176px;
+        font-family: 'Montserrat';
+        font-weight: 200;
 
         &__logo{
             box-sizing: content-box;
@@ -22,8 +22,7 @@
     
         &__title{
             box-sizing: content-box;
-            display: flex;
-            justify-content: center;
+            text-align: center;
             padding-bottom: 29px;
             font-size: 28px;
             letter-spacing: 3.36px;
@@ -31,7 +30,7 @@
             font-weight: 200;
             color: $color-white;
             &-negrito{
-                font-weight: bold;
+                font-weight: 400;
                 padding: 0;
             }
         }
@@ -39,35 +38,38 @@
 
     &__nav{
         background-color: $color-white;
-        border: $color-gray-dark;
-        display: flex;
-        justify-content: center;
+        border: 1px solid $color-gray-light;
         text-align: center;
-        height: 56px;
+        margin-bottom: -1;
         
         .nav__ul{
-            letter-spacing: 2.3px;
+            display: flex;
+            justify-content: center;
             opacity: 1;
-            height: 59px;
+            // letter-spacing: 2.3px;
+            // margin: -1px;
 
             &__li{
             padding: 7px 15px;
             display: inline-block;
+            font-family: 'Montserrat';
             font-size: 23px;
-            letter-spacing: 2.3px;
+            font-weight: 300;
             color: $color-gray-regular;
+            width: 5.5em;
+            // letter-spacing: 2.3px;
 
-                &-focus{
-                    color: $color-white;
-                    background: $color-blue-dark;
-                }
+                // &-focus{
+                //     color: $color-white;
+                //     background: $color-blue-dark;
+                //     font-weight: 500;
+                // }
                 &:hover{
                     color: $color-white;
                     background: $color-blue-dark;
+                    font-weight: 500;
                 }
             }  
         }
     }
-
-    
 }
