@@ -16,7 +16,7 @@
         color: $color-white;
         padding-top: 0;
 
-        &__assunto{
+        &Assunto{
             font-weight: 100;
         }
 
@@ -37,19 +37,21 @@
         font-family: 'Montserrat';
         font-weight: 600;
         font-size: 26px;
+        line-height: 35px;
         color: $color-gray-light;
+    }
 
-        &::before{
-            content: ' " ';
-            display: inline-block;
-            width: .5em;
-            height: .7em;
-            color: $color-blue-regular;
-            font-family: serif;
-            font-size: 50px;
-
-        }
-    } 
+    &__decoracao{
+        color: $color-blue-regular;
+        display: inline-block;
+        position: relative;
+        // width: .5em;
+        // height: .7em;
+        font-family: 'DM Serif Display', serif;
+        font-size: 60px;
+        top: .42em;
+        right: .1em;
+    }
     
     &__container{
         display: grid;
@@ -90,6 +92,7 @@
     &__img{
         width: 100%;
         height: 65%;
+        opacity: 0.68;
         border-radius: 15px 15px 0 0;
         border-bottom: 7px solid $color-blue-light;
     }
