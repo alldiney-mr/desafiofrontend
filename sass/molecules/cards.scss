@@ -68,22 +68,22 @@
         box-shadow: 0px 20px 50px $color-black;
         background: transparent linear-gradient(129deg, $color-blue-regular 0%, $color-blue-dark 100%) 0% 0% no-repeat padding-box;
 
-        &__1{
+        &-1{
             grid-column: 1 / 2;
             grid-row: 1 / 4;
         }
 
-        &__2{
+        &-2{
             grid-column: 2 / 2;
             grid-row: 2 / 5;
         }
 
-        &__3{
+        &-3{
             grid-column: 1 / 2;
             grid-row: 5 / 8;
         }
 
-        &__4{
+        &-4{
             grid-column: 2 / 2;
             grid-row: 6 / 9;
         }
