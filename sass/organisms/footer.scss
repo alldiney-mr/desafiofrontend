@@ -3,39 +3,53 @@
     padding-top: 5em;
     color: $color-gray-regular;
     opacity: 1;
-    // padding-top: 122px;
 
     &__header{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        @media (min-width: 1010px){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1.8em;
+        }
     }
 
     &__logo{
-        display: inline-block;
-        width: 11em;
+        display: block;
+        width: 12em;
         height: 65px;
         opacity: 0.68;
-        // width: 233px;
-        // margin-bottom: 60px;
+        margin: auto;
+
+        @media (min-width: 768px){
+            
+        }
+    
+        @media (min-width: 1010px){
+            margin: 0;
+            padding: 1em;
+        }
     }
 
     &__title{
         width: 12em;
-        display: inline-block;
-        box-sizing: content-box;
-        text-align: center;
         font-family: 'Montserrat';
         font-weight: 200;
         font-size: 1.3em;
         letter-spacing: 2.6px;
         text-shadow: $color-gray-dark 0 3px 6px;
-        // padding-left: 10px;
-        // height: 1.4em;
-        // margin-bottom: 38px;
+        margin: auto;
+
         &-negrito{
-            font-weight: 400;
+            font-weight: 500;
+            padding: 0;
+        }
+
+        @media (min-width: 768px){
+            
+        }
+    
+        @media (min-width: 1010px){
+            margin: 0;
             padding: 0;
         }
     }
@@ -43,14 +57,18 @@
     &__description{
         margin: auto;
         margin-top: 38px;
-        width: 58em;
-        height: 98px;
+        width: 85%;
+        height: 10em;
         text-align: center;
-        font-size: 17px;
+        font-size: .65em;
         font-family: 'Montserrat';
-        line-height: 27px;
-        // padding-bottom: 50px;
-        // margin: 0 328px;
+        font-weight: 500;
+        line-height: 1.8em;
+    
+        @media (min-width: 1010px){
+            margin: 0 auto;
+            font-size: .8em;
+            width: 55%;
+        }
     }
-
 }

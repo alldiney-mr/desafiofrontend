@@ -1,75 +1,156 @@
 .header{
+    width: 100%;
+    height: 6.5em;
     background-color: $color-blue-light;
-    height: auto;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    @media (min-width: 768px){
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
+        height: 100%;
+    }
+    
+    @media (min-width: 1010px){
+        box-sizing: content-box;
+        padding: 0;
+    }
 
     &__desafio{
-        box-sizing: content-box;
         display: flex;
-        flex-direction: column; 
-        font-family: 'Montserrat';
-        font-weight: 200;
-    }
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
 
-    &__logo{
-        box-sizing: content-box;
-        margin: auto;
-        padding-top: 32.35px;
-        padding-bottom: 14px;
-        width: 247px;
-        height: 51px;
-        background: transparent url('img/valtech-logo-vector.png') 0% 0% no-repeat padding-box;
-        opacity: 0.68;
-    }
+        @media (min-width: 768px){
+            box-sizing: content-box;
+            align-items: center;
+            padding: 10px;
+        }
 
-    &__title{
-        box-sizing: content-box;
-        text-align: center;
-        padding-bottom: 29px;
-        font-size: 28px;
-        letter-spacing: 3.36px;
-        // text-shadow: $color-gray-dark 0 3px 6px;
-        font-weight: 200;
-        color: $color-white;
-        &-negrito{
-            font-weight: 400;
+        @media (min-width: 1010px){
+            align-items: center;
             padding: 0;
         }
     }
 
+    &__logo{
+        height: 2em;
+        width: 8em;
+        margin-left: -.6em;
+        background: transparent url('img/valtech-logo-vector.png') 0% 0% no-repeat padding-box;
+        opacity: 0.68;
+        padding-bottom: 10px;
+
+        @media (min-width: 1010px){
+            box-sizing: content-box;
+            margin: auto;
+            padding-top: 32.35px;
+            padding-bottom: 14px;
+            width: 247px;
+            height: 51px;
+        }
+    }
+
+    &__title{
+        font-family: 'Montserrat';
+        font-weight: 200;
+        font-size: .9em;
+
+        &-negrito{
+            font-weight: 400;
+            padding: 0;
+        }
+
+        @media (min-width: 1010px){
+            box-sizing: content-box;
+            text-align: center;
+            padding-bottom: 29px;
+            font-size: 28px;
+            letter-spacing: 3.36px;
+            // text-shadow: $color-gray-dark 0 3px 6px;
+            font-weight: 200;
+            color: $color-white;
+        }
+    }
+
     &__nav{
-        background-color: $color-white;
-        border: 1px solid $color-gray-light;
-        text-align: center;
-        margin-bottom: -1;
-        
-        
+        display: none;
+
+        @media (min-width: 768px){
+            display: block;
+            width: 100%;
+            background-color: $color-white;
+            text-align: center;
+            margin-bottom: -1;
+        }
     }
 
     &__list{
-        display: flex;
-        justify-content: center;
-        opacity: .98;
-        margin: -1px;
+        @media (min-width: 768px){
+            display: flex;
+            justify-content: center;
+            opacity: .98;
+        }
     }
 
     &__item{
+        @media (min-width: 768px){
         padding: 7px 15px;
         display: inline-block;
         font-family: 'Montserrat';
         font-size: 23px;
         font-weight: 300;
         color: $color-gray-regular;
-        width: 5.5em;
 
             // &-focus{
             //     color: $color-white;
             //     background: $color-blue-dark;
             //     font-weight: 500;
             // }
-        &:hover{
-            color: $color-white;
-            background: $color-blue-light;
-            font-weight: 500;
+            &:hover{
+                color: $color-white;
+                background: $color-blue-light;
+                font-weight: 500;
+            }
         }
+
+        @media (min-width: 1010px){
+            width: 5.5em;
+        } 
     } 
+    
+    &__hamburguer{
+        position: absolute;
+        width: 40px;
+        height: .09em;
+        background-color: $color-white;
+        top: 50%;
+        right: 12px;
+    
+        &::before{
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: .09em;
+            background-color: $color-white;
+            bottom: 15px;
+        }
+    
+        &::after{
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: .09em;
+            background-color: $color-white;
+            top: 15px;
+        }
+
+        @media (min-width: 768px){
+            display: none;
+        }
+    }
 }

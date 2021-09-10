@@ -1,29 +1,56 @@
 .fullBanner{
     width: 100%;
-    height: 569px;
-    position: relative;
+    height: 40em;
     display: flex;
+    position: relative;
     border-top: 5px solid $color-blue-light;
-    margin-top: 165px;
     background: transparent linear-gradient(129deg, $color-blue-regular 0%, $color-blue-dark 100%) 0% 0% no-repeat padding-box;
 
+    @media (min-width: 1010px){
+        margin-top: 25em;
+    }
+
     &__img{
-        width: 100%;
-        opacity: 0.55;
+        position: relative;
+
+        &-bg{
+            display: none;
+            width: 100%;
+            opacity: 0.55;
+            @media (min-width: 768px){
+                display: block;
+            }
+        }
+
+        &-sm{
+            display: block;
+            width: 100%;
+            opacity: 0.55;
+            @media (min-width: 768px){
+                display: none;
+            }
+        }
     }
 
     &__text{
         position: absolute;
         display: flex;
         justify-content: center;
-        padding: 450px 0 0 40em;
+        top: 550px;
+        margin: 0 28%;
+    
+        @media (min-width: 1010px){
+            margin: 0;
+            top: 82%;
+            left: 48%;
+        }
     }
 
     &__palavras{
         font-family: 'Montserrat';
         font-weight: 300;
         font-size: 5vw;
-        padding-right: .5em;
+        padding-right: .3em;
         color: $color-white;
 
         &::after{
